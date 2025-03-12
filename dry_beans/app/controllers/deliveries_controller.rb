@@ -5,6 +5,7 @@ class DeliveriesController < ApplicationController
       render json: delivery, status: :created
     else
       render json: { errors: delivery.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   private

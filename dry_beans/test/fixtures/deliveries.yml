@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trip: one
+  delivery_type: MyString
+  recipient: MyString
+  address: MyString
+  status: MyString
+
+two:
+  trip: two
+  delivery_type: MyString
+  recipient: MyString
+  address: MyString
+  status: MyString

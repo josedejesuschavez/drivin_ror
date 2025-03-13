@@ -40,3 +40,32 @@ rails server
 ```sh
 rails test
 ```
+
+## Modelos
+
+```sh
+Route
+[["id", :integer], 
+ ["name", :string],
+ ["description", :text],
+ ["created_at", :datetime],
+ ["updated_at", :datetime]]
+
+Trip
+[["id", :integer],
+ ["route_id", :integer],
+ ["departure_time", :datetime],
+ ["arrival_time", :datetime],
+ ["created_at", :datetime],
+ ["updated_at", :datetime]]
+
+Delivery
+[["id", :integer],
+ ["trip_id", :integer],
+ ["delivery_type", :string],
+ ["recipient", :string],
+ ["address", :string],
+ ["status", :string],
+ ["created_at", :datetime],
+ ["updated_at", :datetime]]
+```

@@ -29,10 +29,14 @@ rails db:create
 rails db:migrate
 ```
 
-4. Ejecutar
+4. Ejecutar proyecto
 
 ```sh
 rails server
 ```
 
+5. Ejecutar tests
 
+```sh
+rails test
+```

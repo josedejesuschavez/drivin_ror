@@ -45,6 +45,9 @@ rails test
 
 ```sh
 Route
+
+El modelo Route representa una ruta en la aplicación. Cada ruta puede tener múltiples viajes (Trip). Aquí están los campos del modelo
+
 [["id", :integer], 
  ["name", :string],
  ["description", :text],
@@ -52,6 +55,9 @@ Route
  ["updated_at", :datetime]]
 
 Trip
+
+El modelo Trip representa un viaje asociado a una ruta. Cada viaje puede tener múltiples entregas (Delivery)
+
 [["id", :integer],
  ["route_id", :integer],
  ["departure_time", :datetime],
@@ -60,6 +66,9 @@ Trip
  ["updated_at", :datetime]]
 
 Delivery
+
+El modelo Delivery representa una entrega asociada a un viaje.
+
 [["id", :integer],
  ["trip_id", :integer],
  ["delivery_type", :string],

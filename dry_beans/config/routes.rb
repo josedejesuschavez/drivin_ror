@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "trips/create"
   get "deliveries/create"
   get "routes/show"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  resources :routes, only: [:show]
+  resources :routes, only: [:create, :show]
   resources :deliveries, only: [:create]
+  resources :trips, only: [:create]
 end
